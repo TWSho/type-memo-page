@@ -14,18 +14,33 @@ body {
   background-color: #111111;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header{
   background-color: #272727;
   color: #d396ed;
-  padding: 2em;
+  padding: 1em;
   text-align: center;
   font-weight: 700;
+  display: flex;
+  align-items: center;
 }
+
+.header-icon {
+  height: 50px; /* アイコンの高さを設定 */
+}
+
 .home-link{
   color: #d396ed;
   text-decoration: none; /* 下線を消す */
-  font-size: 2.5em; /* リンクのテキストサイズを変更 */
+  font-size: 2em; /* リンクのテキストサイズを変更 */
+  padding-left: 1em;
 }
+
 footer {
   position: absolute;
   bottom: 0;
