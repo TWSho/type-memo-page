@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; URL='/type-memo-page'" />
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL='/type-memo-page/'" />
     <script type="text/javascript">
-      // JavaScriptのリダイレクト
+      // JavaScriptでリダイレクト
       setTimeout(function () {
-        window.location.href = '/type-memo-page';
+        // 現在のパスをクエリパラメータとして保存
+        const redirectPath = window.location.pathname + window.location.search;
+        window.location.href = '/type-memo-page?redirect=' + encodeURIComponent(redirectPath);
       }, 0);
     </script>
   </head>
