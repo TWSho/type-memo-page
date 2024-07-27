@@ -1,10 +1,13 @@
 // src/components/Header.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <h1>Type Memo</h1>
+      <nav>
+        <Link to="/" className="home-link">Type Memo</Link>
+      </nav>
     </header>
   );
 };
