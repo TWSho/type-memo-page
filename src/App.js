@@ -1,6 +1,6 @@
 // src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -10,19 +10,34 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/type-memo-page">
       <div>
         <Header />
+        <RedirectHandler />
         <Routes>
           <Route path="/" element={<MainContent />} />
-          <Route path="/type-memo-page" element={<MainContent />} />
-          <Route path="/type-memo-page/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/type-memo-page/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
     </Router>
   );
+};
+
+const RedirectHandler = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const redirectPath = params.get('redirect');
+    if (redirectPath) {
+      navigate(redirectPath, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null;
 };
 
 export default App;
