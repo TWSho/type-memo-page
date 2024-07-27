@@ -19,6 +19,7 @@ header{
   color: #d396ed;
   padding: 2em;
   text-align: center;
+  font-weight: 700;
 }
 .home-link{
   color: #d396ed;
@@ -34,10 +35,11 @@ footer {
   width: 100%;
   box-sizing: border-box; /* パディングを含めて幅を計算 */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content : center;
-  gap: 0.5em;
+  gap: 1.5em;
   padding: 1em;
+  font-size: 0.8em; /* リンクのテキストサイズを変更 */
 }
 
 footer p {
