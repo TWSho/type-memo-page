@@ -1,13 +1,46 @@
-body {
+/* index.css */
+html{
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  height: 100%;
+  margin: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #111111;
+}
+
+header{
+  background-color: #272727;
+  color: #d396ed;
+  padding: 1em;
+  text-align: center;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #272727;
+  color: white;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; /* パディングを含めて幅を計算 */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+  line-height: 15px;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 2em;
+  }
 }
