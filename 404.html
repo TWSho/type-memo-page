@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL='/type-memo-page/'" />
+    <meta http-equiv="refresh" content="0; URL='/type-memo-page'" />
     <script type="text/javascript">
       // JavaScriptでリダイレクト
       setTimeout(function () {
         // 現在のパスをクエリパラメータとして保存
-        const redirectPath = window.location.pathname + window.location.search;
+        const redirectPath = window.location.pathname.replace('/type-memo-page', '') + window.location.search;
         window.location.href = '/type-memo-page?redirect=' + encodeURIComponent(redirectPath);
       }, 0);
     </script>
