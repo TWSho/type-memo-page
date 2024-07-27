@@ -36,11 +36,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content : center;
-}
-.privacy-link{
-  color: white;
+  gap: 0.5em;
+  padding: 1em;
 }
 
+footer p {
+  margin: 0; /* 各p要素のマージンをリセット */
+}
+
+.link{
+  color: white;
+}
 
 main {
   display: flex;
