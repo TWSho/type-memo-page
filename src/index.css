@@ -2,16 +2,16 @@
 html{
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
-
 body {
-  height: 100%;
   margin: 0;
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
   background-color: #111111;
+  overflow: hidden;
 }
 
 .nav-container {
@@ -28,6 +28,8 @@ header{
   font-weight: 700;
   display: flex;
   align-items: center;
+  height: 60px; /* ヘッダーの高さを設定 */
+  box-sizing: border-box; /* パディングを含めて幅を計算 */
 }
 
 .header-icon {
@@ -55,6 +57,8 @@ footer {
   gap: 1.5em;
   padding: 1em;
   font-size: 0.8em; /* リンクのテキストサイズを変更 */
+  height: 40px; /* フッターの高さを設定 */
+  overflow: hidden;
 }
 
 footer p {
@@ -63,6 +67,11 @@ footer p {
 
 .link{
   color: white;
+}
+
+.routes-container {
+  height: calc(100vh - 100px); /* 必要に応じて調整 */
+  overflow-y: auto; /* 縦方向にスクロール可能にする */
 }
 
 main {
@@ -74,15 +83,16 @@ main {
   text-align: center;
   line-height: 15px;
 }
-
 .main-content h1 {
   text-align: center; /* 見出しだけ中央寄せ */
 }
 
+.main-body {
+  padding-top: 1em;
+}
+
 .main-body h3{
-  margin-top: 50px;
   text-align: left;
-  margin-bottom: 10px;
   font-size: medium;
 }
 
@@ -101,6 +111,7 @@ main {
   width: 150px; /* 画像の幅を調整 */
   cursor: pointer;
   padding: 3em;
+  padding-bottom: 5em;
 }
 
 .app-store-badge:hover {

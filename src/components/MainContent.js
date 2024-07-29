@@ -4,13 +4,12 @@ import appStoreBadge from '../assets/Download_on_the_App_Store_Badge_US-UK_RGB_b
 
 const MainContent = () => {
   return (
-    <main>
+    <main className='main-content'>
       
     <div className="main-body">
 
       <p>Type Memoは、友達の性格タイプを簡単に記録し、管理するためのシンプルで直感的なアプリです。</p>
-      <p>心理学に興味がある方、人間の行動を研究している方、または友達をより深く理解したい方に最適なツールです。</p>
-
+      
       <h3>Type Memoを使う理由:</h3>
       <p>Type Memoを使えば、友達の性格タイプをすぐに記録し、振り返ることができます。</p>
       <p>友達の性格タイプを理解することで、彼らの性格に合った関わり方をし、より円滑な人間関係を築くことができます。</p>

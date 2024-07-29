@@ -14,11 +14,13 @@ const App = () => {
       <div>
         <Header />
         <RedirectHandler />
+        <div className="routes-container">
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
