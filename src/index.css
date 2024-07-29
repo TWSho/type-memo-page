@@ -75,11 +75,32 @@ main {
   line-height: 15px;
 }
 
+.main-content h1 {
+  text-align: center; /* 見出しだけ中央寄せ */
+}
+
+.main-body h3{
+  margin-top: 50px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+.main-body p,
+.main-body ul,
+.main-body li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: left;
+  font-size: small;
+}
+
+
+
 .app-store-badge {
-  width: 200px; /* 画像の幅を調整 */
-  margin-top: 20px;
+  width: 150px; /* 画像の幅を調整 */
   cursor: pointer;
-  padding: 5em;
+  padding: 3em;
 }
 
 .app-store-badge:hover {
