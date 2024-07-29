@@ -75,6 +75,17 @@ main {
   line-height: 15px;
 }
 
+.app-store-badge {
+  width: 200px; /* 画像の幅を調整 */
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 5em;
+}
+
+.app-store-badge:hover {
+  opacity: 0.8; /* ホバー時のエフェクト */
+}
+
 @media (min-width: 600px) {
   main {
     padding: 2em;
